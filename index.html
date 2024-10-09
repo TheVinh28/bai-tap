@@ -3,197 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Peterson - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        .cotainer{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 600px;
-            margin: 10px auto;
-            padding-bottom: 10px;
-        }
-        #job-information{
-            display: flex;
-            flex-direction: column;
-        }
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        .job-title {
-            font-size: 18px;
-            color: #666;
-            margin: 5px 0;
-        }
-        .contact-info {
-            text-align: right;
-        }
-        h2 {
-            border-bottom: 1px solid #333;
-            padding-bottom: 5px;
-            text-transform: uppercase;
-            font-size: 18px;
-        }
-        .experience-item {
-            margin-bottom: 20px;
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        .job-title-company {
-            font-weight: bold;
-        }
-        .date {
-            color: #666;
-        }
-        ul {
-            margin-top: 5px;
-            padding-left: 20px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        .skill-item {
-            display: flex;
-            justify-content: space-between;
-        }
-        .languages {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-    </style>
+    <title>Box model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Bài tập 1 -->
+<div class="blog-post">
+    <h2 class="blog-title">Tiêu Đề Bài Viết Blog</h2>
+    <div class="blog-image">
+        <img src="image-placeholder.jpg" alt="Image" width="600" height="400">
+    </div>
+    <p class="blog-content">
+        Đây là nội dung của bài viết blog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+</div>
+<!-- Bài tập 2 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="product-placeholder.jpg" alt="Product-Image" width="300" height="300">
+    </div class="product-details">
+    <h3 class="product-name">Giá sản phẩm</h3>
+    <p class="product-price">Giá: 500,000 VNĐ</p>
+    <button class="buy-now-button">Mua ngay</button>
+</div>
+<!-- Bài tập 3 -->
+<div class="navbar">
+    <a href="#">Trang Chủ</a>
+    <a href="#">Giới Thiệu</a>
+    <a href="#">Dịch Vụ</a>
+    <a href="#">Liên Hệ</a>
+</div>
+
+<!-- Bài tập 4 -->
+<div class="goal-layout">
+    <div class="box box1">M1</div>
+    <div class="box box2">M2</div>
+    <div class="box box3">M3</div>
+    <div class="box goal">Mục tiêu 2022</div>
+    <div class="box box4">M4</div>
+    <div class="box box5">M5</div>
+    <div class="box box6">M6</div>
+</div>
+
+<!-- Bài tập 5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-    <div class="container">
-        <div id="job-information">
-            <h1>Ryan Peterson</h1>
-            <p class="job-title">Business Analyst</p>
+        <div class="logo"></div>
+        <div class="buttons">
+            <div class="button"></div>
+            <div class="button"></div>
         </div>
-        <div class="contact-info">
-            <span>+1 202-555-0161<br>
-            template@exabler.com<br>
-            www.exabler.com<br>
-            New York, NY</span>
-        </div>
-    </div>
     </header>
+    <main>
+        <section class="sidebar">
+            <div class="sidebar-card"></div>
+            <div class="sidebar-card"></div>
+            <div class="sidebar-card"></div> 
+        </section>
+        <section class="content">
+            <div class="overlay-square"></div>
+        </section>
+    </main>
+</body>
+</html>
 
-    <section>
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <span class="job-title-company">Marketing Business Analyst</span>
-            <div class="job-header">
-                <p style="color: #666;">Prospect Solution</p>
-                <span class="date">03/2015 - Present</span>
-            </div>
-            <ul>
-                <li>Successfully connected internal sales, marketing as well as design teams and departments with external partners via APIs and Slack integrations, leading to 20% more efficient workflow and effective data tracking and sharing of projects.</li>
-                <li>Developed successful business models resulting in a revenue increase of 4.4% from 2015 to 2016.</li>
-                <li>Analyzed and architected business intelligence models to measure ROI. Monitored and reviewed options, risks, and costs of company's $5 million budget.</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <span class="job-title-company">Project Manager</span>
-            <div class="job-header">
-                <p style="color: #666;">Prospect Solution</p>
-                <span class="date">01/2013 - 12/2015</span>
-            </div>
-            <ul>
-                <li>Solved internal financial business challenges by reducing projects' costs by 25% while employing young but talented external freelancers without negatively affecting the overall quality of the project.</li>
-                <li>Managed 42 test teams and executed 89 projects.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title-company">Economics and Political Science</span>
-                <span class="date">2012</span>
-            </div>
-            <p>New York University - Bachelor of Science</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Certificates</h2>
-        <div class="experience-item">
-            <div class="job-header">
-                <span class="job-title-company">Google AdWords Search Advanced</span>
-                <span class="date">2011 - Present</span>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <span><strong>Analytical Skills</strong></span>
-                <span>Advanced</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Organizational Skills</strong></span>
-                <span>Advanced</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Data Architecture</strong></span>
-                <span>Intermediate</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Communication</strong></span>
-                <span>Advanced</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Business Intelligence</strong></span>
-                <span>Advanced</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Time Management</strong></span>
-                <span>Expert</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Marketing</strong></span>
-                <span>Advanced</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>Digital Proficiency</strong></span>
-                <span>Advanced</span>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Languages</h2>
-        <div class="languages">
-            <div class="skill-item">
-                <span><strong>English</strong></span>
-                <span>Native</span>
-            </div>
-            <div class="skill-item">
-                <span><strong>French</strong></span>
-                <span>Intermediate</span>
-            </div>
-        </div>
-    </section>
 </body>
 </html>

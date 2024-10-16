@@ -1,0 +1,52 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Đảm bảo card không rộng hơn 300px */
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Responsive cho màn hình lớn */
+  @media (min-width: 768px) {
+    .card-container {
+        display: flex;
+      flex-direction: row;
+    }
+    .card {
+      flex: 1 1 calc(50% - 20px); /* Chia card thành 2 cột, trừ khoảng cách */
+      max-width: none; /* Loại bỏ giới hạn chiều rộng cho màn hình lớn */
+    }
+    .card {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px; /* Đảm bảo card không rộng hơn 300px */
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+  }
+  

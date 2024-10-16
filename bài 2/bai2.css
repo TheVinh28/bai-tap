@@ -1,0 +1,25 @@
+.flex-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các hàng */
+  }
+  
+  .flex-row {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các item trong mỗi hàng */
+  }
+  
+  .flex-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    flex: 1; /* Chia đều chiều rộng của item trong hàng */
+    text-align: center;
+  }
+  
+  /* Responsive cho màn hình nhỏ hơn */
+  @media (max-width: 768px) {
+    .flex-row {
+      flex-direction: column; /* Xếp các item theo cột khi màn hình nhỏ */
+    }
+  }
+  

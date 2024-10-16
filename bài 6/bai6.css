@@ -1,0 +1,36 @@
+body {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    background-color: #f4f4f4;  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+}  
+.article-container {  
+    display: flex;  
+    flex-direction: row;    
+    width: 80%;  
+    max-width: 1200px;  
+}  
+.article1{
+    background: white;  
+    padding: 10px;
+}
+.article2{  
+    background: white;  
+    border-left: 1px solid #080808;
+    padding: 10px;  
+}  
+.article h2 {  
+    margin: 0 0 10px;  
+}  
+@media (max-width: 800px) {  
+    .article-container{  
+        display: flex;
+        flex-direction: column;   
+    }
+    .article2{
+    border-left: 1px solid white ;
+    } 
+}
